@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
-
+import UserData from './UserData';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import UserCreate from './UserCreate';
+import UserEdit from './UserEdit';
+import UserDetail from './UserDetail';
 function App() {
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Crud with Json Web Server</h1>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' Component={UserData} />
+        <Route path='/user/create' Component={UserCreate} />
+        <Route path='/user/detail/:uid' Component={UserDetail} />
+        <Route path='/user/edit/:uid' Component={UserEdit} />
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,0 +1,25 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "name": "Dharmendar",
+      "email": "dharmendar@gmail.com",
+      "address": "Mumbai , Near Andheri",
+      "phone": "484928789"
+    },
+    {
+      "id": 3,
+      "email": "yash@gmail.com",
+      "name": "yash tiwari",
+      "address": "Shivpuri",
+      "phone": "8868687687"
+    },
+    {
+      "id": 4,
+      "email": "rohit@gmail.com",
+      "name": "Rohit",
+      "address": "Mumbai , Bandra West",
+      "phone": "8244647547"
+    }
+  ]
+}
